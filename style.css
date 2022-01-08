@@ -142,3 +142,37 @@ body {
   .pricing-button.is-featured:active {
     background-color: #269aff;
   }
+
+#stab {
+  display: none;
+  flex-direction: column;
+}
+
+#slash {
+  display: none;
+  flex-direction: column;
+}
+
+#crush {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+#stab1 {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+#slash1 {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+#crush1 {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}

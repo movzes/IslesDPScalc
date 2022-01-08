@@ -1,3 +1,7 @@
+function test() {
+    console.log(document.getElementById("stab1").value);
+}
+
 function dmgCalc() {
     var defenseStat = 0;
     var offenseStat = 257;
@@ -14,11 +18,42 @@ function dmgCalc() {
     console.log(calc)
 }
 
+function chooseStyle() {
+    let style = document.getElementById("style1").value;
+    console.log(document.getElementById("style1").value);
+
+    if (style == "slash") {
+        document.getElementById("slash").style.display = "flex";
+        document.getElementById("slash1").style.display = "flex";
+    } else {
+        document.getElementById("slash").style.display = "none";
+        document.getElementById("slash1").style.display = "none";
+    }
+
+    if (style == "crush") {
+        document.getElementById("crush").style.display = "flex";
+        document.getElementById("crush1").style.display = "flex";
+    } else {
+        document.getElementById("crush").style.display = "none";
+        document.getElementById("crush1").style.display = "none";
+    }
+
+    if (style == "stab") {
+        document.getElementById("stab").style.display = "flex";
+        document.getElementById("stab1").style.display = "flex";
+    } else {
+        document.getElementById("stab").style.display = "none";
+        document.getElementById("stab1").style.display = "none";
+    }
+    
+}
+
 function select() {
     var damage = document.getElementById("weapons").value ;
     console.log(damage)
 }
 
 console.log(dmgCalc())
+console.log(document.getElementById("style").value);
 
 // * 6 * (1- (5/100)) * ((4/100)* 12)

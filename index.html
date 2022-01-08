@@ -17,14 +17,34 @@
         </div>
         
         <div class="pricing-plan">
-          <label for="weapons">Choose a weapon:</label><br>
-              <select id="weapons" name="weapons">
-                <option value="120">Weapon1</option>
-                <option value="150">Weapon2</option>
-                <option value="180">Weapon3</option>
-                <option value="200">Weapon4</option>
+          <label id="style" for="style">Choose a style:</label><br>
+              <select id="style1" name="style" onchange="chooseStyle();">
+                <option value="stab">Stab</option>
+                <option value="slash">Slash</option>
+                <option value="crush">Crush</option>
+              </select>
+          <label id="stab" for="stab">Choose a weapon:</label>
+              <select id="stab1" name="stab">
+                <option value='{"stab":120,"one":"two"}'>Stab weapon 1</option>
+                <option value="150">Stab weapon 2</option>
+                <option value="180">Stab weapon 3</option>
+                <option value="200">Stab weapon 4</option>
+              </select>
+          <label id="slash" for="slash">Choose a weapon:</label>
+              <select id="slash1" name="slash">
+                <option value="120">Slash weapon 1</option>
+                <option value="150">Slash weapon 2</option>
+                <option value="180">Slash weapon 3</option>
+                <option value="200">Slash weapon 4</option>
+              </select>
+          <label id="crush" for="crush">Choose a weapon:</label>
+              <select id="crush1" name="crush">
+                <option value="120">Crush weapon 1</option>
+                <option value="150">Crush weapon 2</option>
+                <option value="180">Crush weapon 3</option>
+                <option value="200">Crush weapon 4</option>
               </select> 
-            <button class="button-general" onclick="dmgCalc()"test>Calc damage</button><br>
+            <button class="button-general" onclick="test()">Calc damage</button><br>
             <p id="dps">0</p>
         </div>
         
