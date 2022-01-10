@@ -18,14 +18,14 @@
         
         <div class="pricing-plan">
           <label id="style" for="style">Choose a style:</label><br>
-              <select id="style1" name="style" onchange="chooseStyle();">
+              <select id="style1" name="style" onchange="chooseStyle()">
                 <option value="stab">Stab</option>
                 <option value="slash">Slash</option>
                 <option value="crush">Crush</option>
               </select>
           <label id="stab" for="stab">Choose a weapon:</label>
               <select id="stab1" name="stab">
-                <option value='{"stab":120,"one":"two"}'>Stab weapon 1</option>
+                <option value="120">Stab weapon 1</option>
                 <option value="150">Stab weapon 2</option>
                 <option value="180">Stab weapon 3</option>
                 <option value="200">Stab weapon 4</option>
@@ -44,7 +44,7 @@
                 <option value="180">Crush weapon 3</option>
                 <option value="200">Crush weapon 4</option>
               </select> 
-            <button class="button-general" onclick="test()">Calc damage</button><br>
+            <button class="button-general" onclick="parseDmg()">Calc damage</button><br>
             <p id="dps">0</p>
         </div>
         
