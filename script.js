@@ -1,11 +1,21 @@
+var stabDmg = document.getElementById("stab1").value;
+var slashDmg = document.getElementById("slash1").value;
+var crushDmg = document.getElementById("crush1").value;
+
 function test() {
-    console.log(document.getElementById("stab1").value);
+    console.log(document.getElementById("stab1").value + 1);
+}
+
+function parseDmg() {
+    let offenseValue = [stabDmg, slashDmg, crushDmg];
+    console.log(stabDmg)
 }
 
 function dmgCalc() {
+    let offenseValue = [stabDmg, slashDmg, crushDmg];
+    let offsnseValue = Math.max(...offenseValue);
+    console.log(offsnseValue);
     var defenseStat = 0;
-    var offenseStat = 257;
-    var offsnseValue = document.getElementById("weapons").value ;
 
     var baseHit = offsnseValue * 1.5;
     var defRatio = 1.0 - Math.max(Math.max(0, defenseStat / (Math.max(offsnseValue) + offsnseValue * 0.4)));
